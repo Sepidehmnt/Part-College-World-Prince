@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "sepideh-Roboto";
+  font-weight: 400;
+  src: url("./Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "font-Roboto";
+  font-weight: 500;
+  src: url("./Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url(./Roboto-Bold.ttf);
+}
+
+body {
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "sepideh-Roboto ";
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.logopart {
+  height: 80px;
+  padding-top: 25px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.alert {
+  width: 300px;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Roboto";
+  color: gray;
+  margin-top: 0;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+[class^="field"] {
+  background-color: rgb(219, 212, 212);
+  font-size: 13px;
+  font-family: "sepideh-Roboto";
+  padding: 8px 0 8px 10px;
+  border-radius: 5px;
+  width: 250px;
+  border: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+}
+
+.control-label {
+  font-family: "Roboto";
+  font-size: 10px;
+  color: rgb(56, 54, 54);
+  margin: 0 0 16px 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+input:focus {
+  background-color: #bdbdbd;
+}
+
+[class="rules"] {
+  font-family: "sepideh-Roboto";
+  font-size: 12px;
+}
+
+.service {
+  text-decoration: none;
+  font-family: "sepideh-Roboto";
+  font-size: 12px;
+  color: rgb(0, 98, 199);
+}
+
+.field-phoneNumber:active {
+  box-shadow: 0px 0px 5px 0px rgb(0, 98, 199);
+  border-color: rgb(0, 98, 199);
+}
+
+.field-password:active {
+  box-shadow: 0px 0px 5px 0px rgb(0, 98, 199);
+  border-color: rgb(0, 98, 199);
+}
+
+[class="submit"] {
+  font-family: "Roboto";
+  font-size: 12px;
+  width: 250px;
+  color: rgb(221, 208, 208);
+  background-color: rgb(0, 98, 199);
+  border-radius: 5px;
+  padding: 8px 0 8px 0;
+  margin-top: 30px;
+  border: none;
+  transition: width 0.02s linear 0.000002s;
+}
+
+.submit:active {
+  background-color: blue;
+  width: 300px;
+}
+
+.submit:hover {
+  box-shadow: 0px 0px 5px 0px rgb(112, 112, 235);
+}
+
+[class="reset"] {
+  font-family: "Roboto";
+  font-size: 12px;
+  background-color: white;
+  border: none;
+  color: rgb(0, 98, 199);
+  padding: 0 0 10px 0;
+  margin-bottom: 30px;
+}
+
+.hline {
+  width: 88%;
+  height: 1px;
+  background: grey;
+}
+
+.information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: rgb(214, 136, 136);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  height: 15px;
+  margin: 0 5px 5px 14px;
+}
+
+.pinterest:hover {
+  height: 25px;
+  box-shadow: 0px 0px 10px 0px rgb(91, 91, 91);
+}
+
+.instagram:hover {
+  height: 25px;
+  box-shadow: 0px 0px 10px 0px rgb(91, 91, 91);
+}
+
+.google:hover {
+  height: 25px;
+  box-shadow: 0px 0px 10px 0px rgb(91, 91, 91);
+}
+
+.information p {
+  font-family: "font-Roboto";
+  font-size: 12px;
+  color: grey;
+  padding-right: 15px;
+}

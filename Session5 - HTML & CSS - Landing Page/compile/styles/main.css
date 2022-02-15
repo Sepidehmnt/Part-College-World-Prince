@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Medium.ttf");
+  src: url("./fonts/Roboto/Roboto-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lobster";
+  src: url("./fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@media (max-width: 1200px) {
+  .designhouse-screen .designhouse-picture {
+    order: -1; } }
+
+@media (max-width: 800px) {
+  .artgallery-screen .gallery-pictures {
+    order: -1; } }
+
+@media (max-width: 800px) {
+  .monalisa-screen .monalisa-picture {
+    order: -1; } }
+
+* {
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+body {
+  background-color: #fcf7f1;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden; }
+  body .artgallery-screen {
+    display: flex;
+    flex-wrap: wrap; }
+    body .artgallery-screen .art-gallery {
+      flex-grow: 1; }
+      body .artgallery-screen .art-gallery .navigationbar {
+        margin: 72px 120px 16px; }
+        body .artgallery-screen .art-gallery .navigationbar ul {
+          display: flex;
+          flex-wrap: nowrap; }
+          body .artgallery-screen .art-gallery .navigationbar ul li {
+            font-weight: 500;
+            font-size: 25px;
+            color: #656360;
+            text-decoration: none;
+            margin-right: 20px; }
+            body .artgallery-screen .art-gallery .navigationbar ul li:first-child {
+              color: #e6ab60; }
+      body .artgallery-screen .art-gallery .hline {
+        width: 40px;
+        height: 4px;
+        background-color: #e6ab60;
+        margin: 0 0 36px 120px; }
+      body .artgallery-screen .art-gallery .introduction {
+        margin: 180px 0 0 120px; }
+        body .artgallery-screen .art-gallery .introduction h1,
+        body .artgallery-screen .art-gallery .introduction p {
+          margin-bottom: 16px; }
+        body .artgallery-screen .art-gallery .introduction h1 {
+          font-family: "Lobster";
+          font-weight: 400;
+          font-size: 64px;
+          color: #e6ab60; }
+        body .artgallery-screen .art-gallery .introduction p:nth-child(2) {
+          font-weight: 700;
+          font-size: 28px;
+          padding-top: 28px; }
+        body .artgallery-screen .art-gallery .introduction p:nth-child(3) {
+          color: #656360;
+          font-weight: 500;
+          font-size: 18px;
+          width: 548px;
+          padding-top: 12px;
+          line-height: 1.8em; }
+        body .artgallery-screen .art-gallery .introduction .submit {
+          margin-top: 30px;
+          padding: 20px 44px;
+          border-radius: 6px;
+          border: none;
+          background-color: #e6ab60;
+          font-weight: 700;
+          font-size: 26px; }
+    body .artgallery-screen .gallery-pictures {
+      flex: 1 0 24%; }
+      body .artgallery-screen .gallery-pictures img:first-child {
+        width: 380px;
+        position: relative;
+        top: -110px; }
+      body .artgallery-screen .gallery-pictures img:nth-child(2) {
+        width: 400px;
+        position: absolute;
+        bottom: 70px;
+        right: 60px; }
+  body .monalisa-screen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 200px; }
+    body .monalisa-screen .monalisa-picture {
+      padding: 32px 0;
+      width: 400px; }
+      body .monalisa-screen .monalisa-picture img {
+        width: 100%;
+        position: relative;
+        bottom: -110px;
+        left: 80px; }
+    body .monalisa-screen .monalisa-introduction {
+      flex: 0 0 50%;
+      padding: 60px 0 0 80px; }
+      body .monalisa-screen .monalisa-introduction h2 {
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 44px;
+        color: #e6ab60; }
+      body .monalisa-screen .monalisa-introduction p:nth-child(2) {
+        font-weight: 700;
+        font-size: 28px;
+        padding-top: 12px; }
+      body .monalisa-screen .monalisa-introduction p:nth-child(3) {
+        color: #656360;
+        font-weight: 500;
+        font-size: 18px;
+        width: 548px;
+        padding-top: 16px;
+        line-height: 1.8em; }
+  body .famousart-screen {
+    background-color: #ffff;
+    height: 120vh;
+    text-align: center;
+    flex-wrap: nowrap; }
+    body .famousart-screen .famousart-pictures {
+      left: 24%;
+      top: 30%;
+      width: 100%;
+      height: 300px;
+      position: relative; }
+      body .famousart-screen .famousart-pictures .img-circular1,
+      body .famousart-screen .famousart-pictures .img-circular2,
+      body .famousart-screen .famousart-pictures .img-circular3 {
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+        border-radius: 100px;
+        float: left;
+        margin: 0 60px; }
+      body .famousart-screen .famousart-pictures .img-circular2 {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 50px; }
+    body .famousart-screen .famousart-introduction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 160px; }
+      body .famousart-screen .famousart-introduction p:first-child {
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 50px; }
+      body .famousart-screen .famousart-introduction p span {
+        color: #e6ab60; }
+      body .famousart-screen .famousart-introduction p {
+        color: #656360;
+        font-weight: 500;
+        font-size: 18px;
+        width: 720px;
+        margin-top: 12px;
+        padding-bottom: 10px;
+        line-height: 1.8em; }
+  body .designhouse-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    body .designhouse-screen .design-description {
+      flex: 0 0 50%;
+      padding: 32px; }
+      body .designhouse-screen .design-description h1 {
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 44px;
+        display: inline-block; }
+      body .designhouse-screen .design-description .fifth-word {
+        color: #e6ab60; }
+      body .designhouse-screen .design-description p {
+        color: #656360;
+        font-weight: 500;
+        font-size: 18px;
+        width: 548px;
+        padding-top: 16px;
+        line-height: 1.8em; }
+    body .designhouse-screen .designhouse-picture {
+      padding: 32px 0;
+      width: 600px; }
+      body .designhouse-screen .designhouse-picture img {
+        width: 100%;
+        border-radius: 50% 0 0 50%; }
+  body .historytable-screen {
+    background-color: #ffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    body .historytable-screen .history {
+      margin-bottom: 96px;
+      margin-right: 50px; }
+      body .historytable-screen .history h1 {
+        color: #e6ab60;
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 42px;
+        margin-bottom: 15px; }
+      body .historytable-screen .history p {
+        font-weight: 600;
+        font-size: 22px;
+        text-align: center; }
+    body .historytable-screen .history-table table {
+      width: 700px; }
+      body .historytable-screen .history-table table th,
+      body .historytable-screen .history-table table td {
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px; }
+      body .historytable-screen .history-table table th {
+        background-color: #e6ab60; }
+      body .historytable-screen .history-table table td {
+        background-color: #f0f0f0; }
+  body .artworkgallery-screen {
+    width: 100%;
+    height: 76vh; }
+    body .artworkgallery-screen h1,
+    body .artworkgallery-screen p {
+      margin-left: 40px;
+      margin-bottom: 20px; }
+    body .artworkgallery-screen h1 {
+      font-family: "Lobster";
+      font-weight: 400;
+      font-size: 40px;
+      color: #e6ab60;
+      margin-top: 60px; }
+    body .artworkgallery-screen p {
+      font-weight: 500;
+      font-size: 20px; }
+    body .artworkgallery-screen .artwork-pictures {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: row; }
+      body .artworkgallery-screen .artwork-pictures img {
+        height: 300px;
+        margin: 40px; }
+  body .footer-menu {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50vh;
+    padding-left: 80px; }
+    body .footer-menu h1,
+    body .footer-menu ul {
+      margin-top: 80px; }
+    body .footer-menu h1 {
+      font-family: "Lobster";
+      font-weight: 400;
+      font-size: 40px;
+      color: #e6ab60; }
+    body .footer-menu ul li {
+      color: #656360;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.8rem; }
+    body .footer-menu .submit-mail {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 200px;
+      right: 240px; }
+      body .footer-menu .submit-mail .text,
+      body .footer-menu .submit-mail .submit {
+        padding: 12px 22px;
+        width: 260px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 8px; }
+      body .footer-menu .submit-mail .text {
+        background-color: #f0f0f0;
+        font-weight: 300;
+        color: #656360; }
+      body .footer-menu .submit-mail .submit {
+        background-color: #e6ab60;
+        font-weight: 700;
+        font-size: 16px; }
+  body .footer-hline {
+    width: 90%;
+    height: 1px;
+    background-color: #c4c0bc;
+    margin-left: auto;
+    margin-right: auto; }
+  body .footer {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    body .footer .left-menu,
+    body .footer .right-menu {
+      flex: 0 1 50%;
+      margin: 14px 68px; }
+    body .footer .left-menu i {
+      margin-right: 24px; }
+    body .footer .logo {
+      width: 60px; }
+      body .footer .logo img {
+        width: 100%; }
+    body .footer .right-menu {
+      display: flex;
+      justify-content: flex-end; }
+      body .footer .right-menu p {
+        font-weight: 500;
+        font-size: 16px; }

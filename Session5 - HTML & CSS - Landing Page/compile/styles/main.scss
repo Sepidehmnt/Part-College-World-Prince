@@ -1,0 +1,476 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Medium.ttf");
+  src: url("./fonts/Roboto/Roboto-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  src: url("./fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lobster";
+  src: url("./fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .designhouse-screen {
+    .designhouse-picture {
+      order: -1;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .artgallery-screen {
+    .gallery-pictures {
+      order: -1;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .monalisa-screen {
+    .monalisa-picture {
+      order: -1;
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+$primary-color1: rgb(252, 247, 241);
+$primary-color2: rgb(230, 171, 96);
+$primary-color3: rgb(101, 99, 96);
+
+body {
+  background-color: $primary-color1;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  .artgallery-screen {
+    display: flex;
+    flex-wrap: wrap;
+    .art-gallery {
+      flex-grow: 1;
+      .navigationbar {
+        margin: 72px 120px 16px;
+        ul {
+          display: flex;
+          flex-wrap: nowrap;
+          li {
+            font-weight: 500;
+            font-size: 25px;
+            color: $primary-color3;
+            text-decoration: none;
+            margin-right: 20px;
+            &:first-child {
+              color: $primary-color2;
+            }
+          }
+        }
+      }
+      .hline {
+        width: 40px;
+        height: 4px;
+        background-color: $primary-color2;
+        margin: 0 0 36px 120px;
+      }
+      .introduction {
+        margin: 180px 0 0 120px;
+        h1,
+        p {
+          margin-bottom: 16px;
+        }
+        h1 {
+          font-family: "Lobster";
+          font-weight: 400;
+          font-size: 64px;
+          color: $primary-color2;
+        }
+        p {
+          &:nth-child(2) {
+            font-weight: 700;
+            font-size: 28px;
+            padding-top: 28px;
+          }
+          &:nth-child(3) {
+            color: $primary-color3;
+            font-weight: 500;
+            font-size: 18px;
+            width: 548px;
+            padding-top: 12px;
+            line-height: 1.8em;
+          }
+        }
+        .submit {
+          margin-top: 30px;
+          padding: 20px 44px;
+          border-radius: 6px;
+          border: none;
+          background-color: $primary-color2;
+          font-weight: 700;
+          font-size: 26px;
+        }
+      }
+    }
+    .gallery-pictures {
+      flex: 1 0 24%;
+      img {
+        &:first-child {
+          width: 380px;
+          position: relative;
+          top: -110px;
+        }
+        &:nth-child(2) {
+          width: 400px;
+          position: absolute;
+          bottom: 70px;
+          right: 60px;
+        }
+      }
+    }
+  }
+  .monalisa-screen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    .monalisa-picture {
+      padding: 32px 0;
+      width: 400px;
+      img {
+        width: 100%;
+        position: relative;
+        bottom: -110px;
+        left: 80px;
+      }
+    }
+    .monalisa-introduction {
+      flex: 0 0 50%;
+      padding: 60px 0 0 80px;
+      h2 {
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 44px;
+        color: $primary-color2;
+      }
+      p {
+        &:nth-child(2) {
+          font-weight: 700;
+          font-size: 28px;
+          padding-top: 12px;
+        }
+        &:nth-child(3) {
+          color: $primary-color3;
+          font-weight: 500;
+          font-size: 18px;
+          width: 548px;
+          padding-top: 16px;
+          line-height: 1.8em;
+        }
+      }
+    }
+  }
+
+  .famousart-screen {
+    background-color: #ffff;
+    height: 120vh;
+    text-align: center;
+    flex-wrap: nowrap;
+    .famousart-pictures {
+      left: 24%;
+      top: 30%;
+      width: 100%;
+      height: 300px;
+      position: relative;
+      .img-circular1,
+      .img-circular2,
+      .img-circular3 {
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+        border-radius: 100px;
+        float: left;
+        margin: 0 60px;
+      }
+      .img-circular2 {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 50px;
+      }
+    }
+    .famousart-introduction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 160px;
+      p {
+        &:first-child {
+          font-family: "Lobster";
+          font-weight: 400;
+          font-size: 50px;
+        }
+        span {
+          color: $primary-color2;
+        }
+      }
+      p {
+        color: $primary-color3;
+        font-weight: 500;
+        font-size: 18px;
+        width: 720px;
+        margin-top: 12px;
+        padding-bottom: 10px;
+        line-height: 1.8em;
+      }
+    }
+  }
+  .designhouse-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .design-description {
+      flex: 0 0 50%;
+      padding: 32px;
+      h1 {
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 44px;
+        display: inline-block;
+      }
+      .fifth-word {
+        color: $primary-color2;
+      }
+      p {
+        color: $primary-color3;
+        font-weight: 500;
+        font-size: 18px;
+        width: 548px;
+        padding-top: 16px;
+        line-height: 1.8em;
+      }
+    }
+    .designhouse-picture {
+      padding: 32px 0;
+      width: 600px;
+      img {
+        width: 100%;
+        border-radius: 50% 0 0 50%;
+      }
+    }
+  }
+  .historytable-screen {
+    background-color: #ffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .history {
+      margin-bottom: 96px;
+      margin-right: 50px;
+
+      h1 {
+        color: $primary-color2;
+        font-family: "Lobster";
+        font-weight: 400;
+        font-size: 42px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-weight: 600;
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+    .history-table {
+      table {
+        width: 700px;
+        th,
+        td {
+          padding: 10px 18px;
+          border-radius: 8px;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        th {
+          background-color: $primary-color2;
+        }
+        td {
+          background-color: rgb(240, 240, 240);
+        }
+      }
+    }
+  }
+  .artworkgallery-screen {
+    width: 100%;
+    height: 76vh;
+    h1,
+    p {
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: "Lobster";
+      font-weight: 400;
+      font-size: 40px;
+      color: $primary-color2;
+      margin-top: 60px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .artwork-pictures {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: row;
+      img {
+        height: 300px;
+        margin: 40px;
+      }
+    }
+  }
+  .footer-menu {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50vh;
+    padding-left: 80px;
+    h1,
+    ul {
+      margin-top: 80px;
+    }
+    h1 {
+      font-family: "Lobster";
+      font-weight: 400;
+      font-size: 40px;
+      color: $primary-color2;
+    }
+    ul {
+      li {
+        color: $primary-color3;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.8rem;
+      }
+    }
+    .submit-mail {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 200px;
+      right: 240px;
+      .text,
+      .submit {
+        padding: 12px 22px;
+        width: 260px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 8px;
+      }
+      .text {
+        background-color: rgb(240, 240, 240);
+        font-weight: 300;
+        color: $primary-color3;
+      }
+      .submit {
+        background-color: $primary-color2;
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-hline {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(196, 192, 188);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-menu,
+    .right-menu {
+      flex: 0 1 50%;
+      margin: 14px 68px;
+    }
+    .left-menu {
+      i {
+        margin-right: 24px;
+      }
+    }
+    .logo {
+      width: 60px;
+      img {
+        width: 100%;
+      }
+    }
+    .right-menu {
+      display: flex;
+      justify-content: flex-end;
+      p {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+}

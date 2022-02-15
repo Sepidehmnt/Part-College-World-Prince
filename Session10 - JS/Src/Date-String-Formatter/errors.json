@@ -1,0 +1,9 @@
+{
+    "length": "Length must be 8",
+    "month": "Month must be in 1, 12",
+    "dayFirstSixMonth": "Day must be in 1, 31 for the first six months",
+    "daySecondSixMonth": "Day must be in 1, 30 for the second six months (Exc. non-leap)",
+    "dayTwelthMonthLeap": "Day must be in 1, 30 range for the 12th month of a LEAP year",
+    "dayTwelthMonthNonLeap": "Day must be in 1, 29 for the 12th month of a NON-LEAP year",
+    "somethingWrong": "Something went wrong!"
+}

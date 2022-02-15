@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/roboto-regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/roboto-medium.ttf) format("truetype");
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 135, 190);
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main {
+  background-color: white;
+  width: 280px;
+  height: 360px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 0 16px 20px;
+  line-height: 1.8rem;
+  font-weight: 500;
+  position: relative;
+}
+body .main .box {
+  background-color: rgb(218, 218, 218);
+  width: 260px;
+  height: 360px;
+  margin: 20px 0 60px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body .main .box .white-box {
+  background-color: white;
+  width: 44px;
+  height: 222px;
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+@keyframes scale {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 256px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+body .main h2 {
+  color: rgb(80, 82, 82);
+}
+body .main p {
+  color: rgb(123, 129, 129);
+  font-size: 16px;
+}
+body .main:hover::after {
+  content: "Recommended";
+  padding: 5px;
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  bottom: -80px;
+  right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: ease-in-out;
+}
